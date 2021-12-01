@@ -36,11 +36,20 @@ db.once('open', () => {
  * @param {String} date 
  * @returns A promise. Resolves to the JSON object for the document created by calling save
  */
-  const createMovie = async (name, reps, weight, unit, date) => {
+  const createExercise = async (name, reps, weight, unit, date) => {
     // Call the constructor to create a new instance of the model class Exercise
     const exercise = new Exercise({ name: name, reps: reps, weight: weight, unit: unit, date: date });
     // Call save to persist this object as a document in MongoDB
     return exercise.save();
 }
 
-export { createExercise };
+/**
+ * Retrieve all exercises
+ * @returns A JSON array containing the entire collection of exercises
+ */
+ const getExercises = async () => {
+    const query = Exercise.find({});
+    return query.exec();
+}
+
+export { createExercise, getExercises };
