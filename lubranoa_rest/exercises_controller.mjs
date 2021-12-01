@@ -28,11 +28,7 @@ app.use(express.json());
 app.get('/exercises', (req, res) => {
     exercises.getExercises()
         .then(exercises =>{
-            if (exercises !== null) {
-                res.json(exercises);
-            } else {
-                res.status(404).json({ Error: 'Resource not found' });
-            }
+            res.json(exercises);
         })
         .catch(error => {
             console.error(error);
