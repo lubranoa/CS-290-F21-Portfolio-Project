@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 mongoose.connect(
     'mongodb://localhost:27017/exercises_db',
-    {useNewUrlParser: true, useUnifiedTopology: true}
+    {  useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 const db = mongoose.connection;
@@ -54,7 +54,7 @@ db.once('open', () => {
 
 /**
  * Replace the name, reps, weight, unit, and date properties of the exercise
- * with an _id matching the one passed to the function.
+ * with an _id matching the one passed to the function
  * @param {String} _id 
  * @param {String} name 
  * @param {Number} reps 
@@ -63,10 +63,21 @@ db.once('open', () => {
  * @param {String} date 
  * @returns A promise. Resolves to the number of documents modified
  */
- const replaceExercise = async (_id, name, reps, weight, unit, date) => {
+ const replaceExerciseById = async (_id, name, reps, weight, unit, date) => {
     const result = await Exercise.replaceOne({ _id: _id }, 
         { name: name, reps: reps, weight: weight, unit: unit, date: date });
     return result.modifiedCount;
 }
 
-export { createExercise, getExercises, replaceExercise };
+/**
+ * Delete the exercise with an _id matching the one passed to the function
+ * @param {String} _id 
+ * @returns A promise. Resolves to the count of deleted documents
+ */
+ const deleteExerciseById = async (_id) => {
+    const result = await Exercise.deleteOne({ _id: _id });
+    // Return the count of deleted document. Since we called deleteOne, this will be either 0 or 1.
+    return result.deletedCount;
+}
+
+export { createExercise, getExercises, replaceExerciseById, deleteExerciseById };
