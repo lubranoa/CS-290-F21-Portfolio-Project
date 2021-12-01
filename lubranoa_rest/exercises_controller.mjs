@@ -26,7 +26,7 @@ app.use(express.json());
  * Retrieves all exercises
  */
 app.get('/exercises', (req, res) => {
-    exercises.getExercises({}, '', 0)
+    exercises.getExercises()
         .then(exercises =>{
             if (exercises !== null) {
                 res.json(exercises);
