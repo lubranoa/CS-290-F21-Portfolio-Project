@@ -1,0 +1,122 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 15,
+    "weight": 200,
+    "unit": "pounds",
+    "date": "01-01-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 15,
+    "weight": 200,
+    "unit": "pounds",
+    "date": "11-13-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 15,
+    "weight": 200,
+    "unit": "pounds",
+    "date": "11-15-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 10,
+    "weight": 220,
+    "unit": "pounds",
+    "date": "11-18-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 10,
+    "weight": 220,
+    "unit": "pounds",
+    "date": "11-20-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 10,
+    "weight": 220,
+    "unit": "pounds",
+    "date": "11-22-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squats",
+    "reps": 20,
+    "weight": 250,
+    "unit": "pounds",
+    "date": "11-11-21"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squats",
+    "reps": 20,
+    "weight": 250,
+    "unit": "pounds",
+    "date": "11-13-21"
+}
+###npm
+GET http://localhost:3000/exercises HTTP/1.1
+
+###
+
+PUT http://localhost:3000/exercises/61a6b68e66912380eeebaf6c HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 20,
+    "weight": 200,
+    "unit": "pounds",
+    "date": "11-11-21"
+}
+
+###
+DELETE http://localhost:3000/exercises/61a6344b2256fa50c20ad687 HTTP/1.1
+
+
+
