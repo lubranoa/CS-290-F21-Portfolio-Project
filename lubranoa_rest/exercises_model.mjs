@@ -52,4 +52,21 @@ db.once('open', () => {
     return query.exec();
 }
 
-export { createExercise, getExercises };
+/**
+ * Replace the name, reps, weight, unit, and date properties of the exercise
+ * with an _id matching the one passed to the function.
+ * @param {String} _id 
+ * @param {String} name 
+ * @param {Number} reps 
+ * @param {Number} weight
+ * @param {String} unit
+ * @param {String} date 
+ * @returns A promise. Resolves to the number of documents modified
+ */
+ const replaceExercise = async (_id, name, reps, weight, unit, date) => {
+    const result = await Exercise.replaceOne({ _id: _id }, 
+        { name: name, reps: reps, weight: weight, unit: unit, date: date });
+    return result.modifiedCount;
+}
+
+export { createExercise, getExercises, replaceExercise };
