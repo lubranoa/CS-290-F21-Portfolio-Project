@@ -4,13 +4,13 @@ function ExerciseTableHead() {
     return (
         <thead>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>Name</th>
+                <th>Reps</th>
+                <th>Weight</th>
+                <th>Unit</th>
+                <th>Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>
     );
