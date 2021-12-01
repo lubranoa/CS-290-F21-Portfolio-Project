@@ -21,3 +21,21 @@ app.use(express.json());
             res.status(400).json({ Error: 'Request failed' });
         });
 });
+
+/**
+ * Retrieves all exercises
+ */
+app.get('/exercises', (req, res) => {
+    exercises.getExercises({}, '', 0)
+        .then(exercises =>{
+            if (exercises !== null) {
+                res.json(exercises);
+            } else {
+                res.status(400).json({ Error: 'Resource not found' });
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            res.status(400).json({ Error: 'Request Failed' });
+        });
+});
