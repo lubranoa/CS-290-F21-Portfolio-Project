@@ -58,7 +58,7 @@ app.put('/exercises/:_id', (req, res) => {
             console.error(error);
             res.status(400).json({ Error: 'Request failed' });
         });
-})
+});
 
 /**
  * Delete the exercise that has a matching _id to the _id in the 
@@ -77,4 +77,8 @@ app.delete('/exercises/:_id', (req, res) => {
             console.error(error);
             res.send({ Error: 'Request failed' })
         });
-})
+});
+
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}...`);
+});
