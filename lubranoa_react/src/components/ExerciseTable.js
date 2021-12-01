@@ -7,6 +7,8 @@ function ExerciseTable({ exercises }) {
         <table id='exercises'>
             < ExerciseTableHead />
             <tbody>
+                {exercises.map((exercise, i) => < Exercise exercise={exercise}
+                    key={i} />)}
             </tbody>
         </table>
     );
