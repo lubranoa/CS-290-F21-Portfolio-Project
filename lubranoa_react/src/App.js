@@ -8,12 +8,12 @@ import { useState } from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<HomePage />}></Route>
-          <Route path="/add-movie" element={<AddExercisePage />}></Route>
-          <Route path="/edit-movie" element={<EditExercisePage />}></Route>
+          <Route path='/' exact element={<HomePage />}></Route>
+          <Route path='/add-exercise' element={<AddExercisePage />}></Route>
+          <Route path='/edit-exercise' element={<EditExercisePage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
