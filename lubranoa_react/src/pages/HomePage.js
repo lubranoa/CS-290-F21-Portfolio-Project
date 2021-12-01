@@ -18,11 +18,11 @@ function HomePage() {
     }, []);
     
     return (
-        <>
+        <div className="App-header">
             <h2>List of Exercises</h2>
             < ExerciseTable exercises={exercises} />
             < Navigation />
-        </>
+        </div>
     )
 }
 

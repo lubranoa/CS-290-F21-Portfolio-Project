@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AddExercisePage from './pages/AddExercisePage';
 import EditExercisePage from './pages/EditExercisePage';
@@ -9,19 +9,13 @@ import { useState } from 'react';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <div className="App-header">
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/add-movie">
-            <AddExercisePage />
-          </Route>
-          <Route path="/edit-movie">
-            <EditExercisePage />
-          </Route>
-          </div>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<HomePage />}></Route>
+          <Route path="/add-movie" element={<AddExercisePage />}></Route>
+          <Route path="/edit-movie" element={<EditExercisePage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
