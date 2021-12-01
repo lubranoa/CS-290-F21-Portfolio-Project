@@ -4,7 +4,7 @@ const AddExercisePage = () => {
 
     return (
         <div>
-            <h1>Add Exercise</h1>
+            <h2>Add Exercise</h2>
         </div>
     );
 }
