@@ -39,3 +39,28 @@ app.get('/exercises', (req, res) => {
             res.status(400).json({ Error: 'Request Failed' });
         });
 });
+
+/**
+ * Update the exercise that has a matching _id to the _id in the 
+ * query paramter of the URL and set its title, year and language
+ * to the values provided in the body
+ */
+app.put('/exercises/:_id', (req, res) => {
+    exercises.replaceExerciseById(req.params._id, req.body.name, req.body.reps, req.body.weight, req.body.unit, req.body.date)
+        .then(numUpdated => {
+            if (numUpdated === 1) {
+                res.json({ _id: req.params._id, name: req.body.name, reps: req.body.reps, weight: req.body.weight, unit: req.body.unit, date: req.body.date });
+            } else {
+                res.status(400).json({ Error: 'Resource not found' });
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            res.status(400).json({ Error: 'Request failed' });
+        });
+})
+
+/**
+ * Delete the exercise that has a matching _id to the _id in the 
+ * query paramter of the URL
+ */
