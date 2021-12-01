@@ -99,12 +99,15 @@ content-type: application/json
     "unit": "pounds",
     "date": "11-13-21"
 }
+
+
 ###npm
 GET http://localhost:3000/exercises HTTP/1.1
 
+
 ###
 
-PUT http://localhost:3000/exercises/61a6b68e66912380eeebaf6c HTTP/1.1
+PUT http://localhost:3000/exercises/61a76bb6eaf6f87f8af9783b HTTP/1.1
 content-type: application/json
 
 {
@@ -115,8 +118,6 @@ content-type: application/json
     "date": "11-11-21"
 }
 
+
 ###
-DELETE http://localhost:3000/exercises/61a6344b2256fa50c20ad687 HTTP/1.1
-
-
-
+DELETE http://localhost:3000/exercises/61a76bbbeaf6f87f8af9783d HTTP/1.1
