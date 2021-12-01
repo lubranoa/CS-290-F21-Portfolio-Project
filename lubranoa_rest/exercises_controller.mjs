@@ -64,3 +64,17 @@ app.put('/exercises/:_id', (req, res) => {
  * Delete the exercise that has a matching _id to the _id in the 
  * query paramter of the URL
  */
+app.delete('/exercises/:_id', (req, res) => {
+    exercises.deleteExerciseById(req.params._id)
+        .then(deletedCount => {
+            if (deletedCount === 1) {
+                res.status(204).send();
+            } else {
+                res.status(404).json({ Error: 'Resource not found' });
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            res.send({ Error: 'Request failed' })
+        });
+})
