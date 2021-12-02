@@ -1,13 +1,13 @@
 import React from "react";
 import InputTableHead from "./InputTableHead";
-import InputRow from "./InputRow";
+import AddExerciseRow from "./AddExerciseRow";
 
 function InputTable() {
     return (
         <table id="inputs">
             < InputTableHead />
             <tbody>
-                < InputRow />
+                < AddExerciseRow />
             </tbody>
         </table>
     );

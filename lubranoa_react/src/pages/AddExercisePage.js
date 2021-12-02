@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import InputTableHead from "../components/InputTableHead";
-import InputRow from "../components/InputRow";
+import InputRow from "../components/AddExerciseRow";
 
 export const AddExercisePage = () => {
 
