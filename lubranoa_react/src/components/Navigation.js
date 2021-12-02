@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function Navigation() {
     return (
         <nav>
-            <Link to='/'>Go back to Home</Link>
-            <Link to='/add-movie'>Add an exercise</Link>
+            <Link to='/' className ='App-nav'>Go back to Home Page</Link>
+            <Link to='/add-exercise' className ='App-nav'>Add an exercise</Link>
         </nav>
     );
 }
