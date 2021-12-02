@@ -1,5 +1,5 @@
 import React from "react";
-import InputTableHead from "./InputTableHeader";
+import InputTableHead from "./InputTableHead";
 import InputRow from "./InputRow";
 
 function InputTable() {
