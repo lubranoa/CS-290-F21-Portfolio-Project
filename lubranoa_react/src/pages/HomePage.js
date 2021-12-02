@@ -19,11 +19,11 @@ function HomePage({ setExerciseToEdit }) {
 
     const onEditExercise = exercise => {
         setExerciseToEdit(exercise);
-        history.push('/edit-exercise');
+        history.push("/edit-exercise");
     };
     
     const loadExercises = async () => {
-        const response = await fetch('/exercises');
+        const response = await fetch("/exercises");
         const data = await response.json();
         setExercises(data);
     };
