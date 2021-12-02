@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage";
 import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
 import SolarizedLogo from "./components/SolarizedLogo";
+import Navigation from '../components/Navigation';
+
 import { useState } from "react";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
           <Route path="/edit-exercise">
             < EditExercisePage />
           </Route>
+          <footer>< Navigation /></footer>
         </div>
       </Router>
     </div>

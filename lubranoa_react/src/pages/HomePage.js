@@ -1,6 +1,5 @@
 import React from "react";
 import ExerciseTable from "../components/ExerciseTable";
-import Navigation from '../components/Navigation';
 import { useState, useEffect } from 'react';
 
 function HomePage() {
@@ -21,7 +20,6 @@ function HomePage() {
         <>
             <h2>List of Exercises</h2>
             <p>< ExerciseTable exercises={exercises} /></p>
-            <footer>< Navigation /></footer>
         </>
     )
 }
