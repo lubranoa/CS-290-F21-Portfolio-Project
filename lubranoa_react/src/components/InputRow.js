@@ -5,8 +5,8 @@ function InputRow({
     reps, setReps, 
     weight, setWeight, 
     unit, setUnit, 
-    date, setDate, 
-    addExercise }) {
+    date, setDate
+}) {
     return(
         <tr>
             <td>
