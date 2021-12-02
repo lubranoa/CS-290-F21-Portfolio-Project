@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddExerciseRow({ 
+function EditExerciseRow({ 
     name, setName, 
     reps, setReps, 
     weight, setWeight, 
@@ -43,4 +43,4 @@ function AddExerciseRow({
     );
 }
 
-export default AddExerciseRow;
+export default EditExerciseRow;
