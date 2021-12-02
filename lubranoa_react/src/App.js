@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
+import SolarizedLogo from "./components/SolarizedLogo";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
-import SolarizedLogo from "./components/SolarizedLogo";
 import Navigation from "./components/Navigation";
 
 import { useState } from "react";

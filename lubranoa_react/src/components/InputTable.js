@@ -4,7 +4,7 @@ import InputRow from "./InputRow";
 
 function InputTable() {
     return (
-        <table id='inputs'>
+        <table id="inputs">
             < InputTableHead />
             <tbody>
                 < InputRow />

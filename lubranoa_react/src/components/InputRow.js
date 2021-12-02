@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input () {
+function InputRow() {
     return(
         <tr>
             <td>text input</td>
@@ -12,4 +12,4 @@ function Input () {
     );
 }
 
-export default Input;
+export default InputRow;

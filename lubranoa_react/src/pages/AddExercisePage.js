@@ -1,7 +1,7 @@
 import React from "react";
 import InputTable from "../components/InputTable";
 
-const AddExercisePage = () => {
+export const AddExercisePage = () => {
 
     return (
         <>
