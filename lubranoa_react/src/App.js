@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
+import SolarizedLogo from "./components/SolarizedLogo";
 import { useState } from "react";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
     <div className="App">
       <Router>
         <div className="App-header">
+          < SolarizedLogo />
+          <h1>Solarized Dark Exercise Tracker</h1>
           <Route path="/" exact>
             < HomePage />
           </Route>
