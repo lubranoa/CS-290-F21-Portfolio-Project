@@ -6,7 +6,7 @@ function HomePage() {
     
     const [exercises, setExercises] = useState([]);
 
-    const onDelete = async _id => {
+    const onDeleteExercise = async _id => {
         const response = await fetch(`/exercises/${_id}`, {method: 'DELETE'});
         if (response.status === 204) {
             setExercises(exercises.filter(exercise => exercise._id !== _id));
@@ -28,7 +28,7 @@ function HomePage() {
     return (
         <>
             <h2>List of Exercises</h2>
-            <p>< ExerciseTable exercises={exercises} onDelete={onDelete} /></p>
+            <p>< ExerciseTable exercises={exercises} onDeleteExercise={onDeleteExercise} /></p>
         </>
     );
 }

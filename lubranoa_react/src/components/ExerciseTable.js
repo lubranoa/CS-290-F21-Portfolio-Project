@@ -2,13 +2,13 @@ import React from 'react';
 import ExerciseTableHead from './ExerciseTableHead';
 import Exercise from './Exercise';
 
-function ExerciseTable({ exercises, onDelete }) {
+function ExerciseTable({ exercises, onDeleteExercise }) {
     return (
         <table id='exercises'>
             < ExerciseTableHead />
             <tbody>
                 {exercises.map((exercise, i) => < Exercise exercise={exercise}
-                    onDelete={onDelete}
+                    onDeleteExercise={onDeleteExercise}
                     key={i} />)}
             </tbody>
         </table>
