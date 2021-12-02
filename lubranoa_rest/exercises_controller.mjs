@@ -1,5 +1,5 @@
 import * as exercises from './exercises_model.mjs';
-import express from 'express';
+import express, { json } from 'express';
 
 const PORT = 3000;
 
@@ -18,7 +18,7 @@ app.use(express.json());
         .catch(error => {
             console.error(error);
             // In case of an error, send back status code 400.
-            res.status(400).json({ Error: 'Request failed' });
+            res.status(500).json({ Error: 'Request failed' });
         });
 });
 
@@ -32,7 +32,7 @@ app.get('/exercises', (req, res) => {
         })
         .catch(error => {
             console.error(error);
-            res.status(400).json({ Error: 'Request Failed' });
+            res.status(500).json({ Error: 'Request Failed' });
         });
 });
 
@@ -52,7 +52,7 @@ app.put('/exercises/:_id', (req, res) => {
         })
         .catch(error => {
             console.error(error);
-            res.status(400).json({ Error: 'Request failed' });
+            res.status(500).json({ Error: 'Request failed' });
         });
 });
 
@@ -71,7 +71,7 @@ app.delete('/exercises/:_id', (req, res) => {
         })
         .catch(error => {
             console.error(error);
-            res.send({ Error: 'Request failed' })
+            res.status(500).json({ Error: 'Request failed' })
         });
 });
 
