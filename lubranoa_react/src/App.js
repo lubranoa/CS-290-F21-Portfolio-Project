@@ -16,6 +16,14 @@ function App() {
         <div className="App-header">
           < SolarizedLogo />
           <h1>Solarized Dark Exercise Tracker</h1>
+          <p>
+            Welcome to our website! We'll help you keep track of your exercises, how many 
+            reps you did, how much weight you used, the units of that weight, and the date 
+            you did that exercise. You can see what all you've accomplished over your 
+            workout journey and can add more accomplishments or even edit or delete them 
+            in case you messed up your entry while hitting that One-Rep Max goal. Good 
+            luck and have fun!
+          </p>
           <Route path="/" exact>
             < HomePage />
           </Route>
