@@ -16,25 +16,25 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
     const editExercise = async () => {
         const editedExercise = {name, reps, weight, unit, date};
         const response = await fetch(`/exercises/${exerciseToEdit._id}`, {
-            method: 'PUT',
+            method: "PUT",
             body: JSON.stringify(editedExercise),
             headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
             },
         });
         if (response.status === 200) {
-            alert('Successfully edited the exercise!');
+            alert("Successfully edited the exercise!");
         } else {
             alert(`Failed to edit exercise, status code = ${response.status}`);
         }
-        history.push('/');
+        history.push("/");
     };
 
     return (
         <>
             <h2>Edit Exercise</h2>
             <p>
-                <table id="editEx">
+                <table className="App-table" id="edit-table">
                     < InputTableHead />
                     <tbody>
                         < EditExerciseRow name={name} setName={setName} 
