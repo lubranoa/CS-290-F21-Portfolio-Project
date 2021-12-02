@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import InputTableHead from "../components/InputTableHead";
-import InputRow from "../components/AddExerciseRow";
+import AddExerciseRow from "../components/AddExerciseRow";
 
 export const AddExercisePage = () => {
 
@@ -37,7 +37,7 @@ export const AddExercisePage = () => {
                 <table id="inputs">
                     < InputTableHead />
                     <tbody>
-                        < InputRow name={name} setName={setName} 
+                        < AddExerciseRow name={name} setName={setName} 
                             reps={reps} setReps={setReps} 
                             weight={weight} setWeight={setWeight} 
                             unit={unit} setUnit={setUnit} 
