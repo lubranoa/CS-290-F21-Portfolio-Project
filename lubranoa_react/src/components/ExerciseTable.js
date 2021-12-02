@@ -1,6 +1,6 @@
 import React from 'react';
 import ExerciseTableHead from './ExerciseTableHead';
-import Exercise from './Exercise';
+import Exercise from './ExerciseRow';
 
 function ExerciseTable({ exercises, onDeleteExercise }) {
     return (
