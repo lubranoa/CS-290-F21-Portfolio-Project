@@ -2,7 +2,7 @@ import React from "react";
 import InputTableHead from "./InputTableHeader";
 import InputRow from "./InputRow";
 
-function ExerciseTable({ exercises }) {
+function InputTable() {
     return (
         <table id='exercises'>
             < InputTableHead />
@@ -13,4 +13,4 @@ function ExerciseTable({ exercises }) {
     );
 }
 
-export default ExerciseTable;
+export default InputTable;
