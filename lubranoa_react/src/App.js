@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
 import SolarizedLogo from "./components/SolarizedLogo";
-import Navigation from '../components/Navigation';
+import Navigation from "./components/Navigation";
 
 import { useState } from "react";
 
