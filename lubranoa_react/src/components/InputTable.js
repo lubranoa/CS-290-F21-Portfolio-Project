@@ -1,12 +1,13 @@
-import React from 'react';
-import ExerciseTableHead from './ExerciseTableHead';
+import React from "react";
+import InputTableHead from "./InputTableHeader";
+import InputRow from "./InputRow";
 
 function ExerciseTable({ exercises }) {
     return (
         <table id='exercises'>
-            < ExerciseTableHead />
+            < InputTableHead />
             <tbody>
-                
+                < InputRow />
             </tbody>
         </table>
     );
