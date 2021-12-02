@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 import InputTableHead from "../components/InputTableHead";
 import InputRow from "../components/InputRow";
 
@@ -41,10 +41,10 @@ export const AddExercisePage = () => {
                             reps={reps} setReps={setReps} 
                             weight={weight} setWeight={setWeight} 
                             unit={unit} setUnit={setUnit} 
-                            date={date} setDate={setDate} 
-                            addExercise={addExercise} />
+                            date={date} setDate={setDate} />
                     </tbody>
                 </table>
+                <button onClick={addExercise}>Add</button>
             </p>
         </>
     );
