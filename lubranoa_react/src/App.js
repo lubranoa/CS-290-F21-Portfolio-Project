@@ -18,7 +18,7 @@ function App() {
         <div className="App-header">
           < SolarizedLogo />
           <h1>Solarized Dark Exercise Tracker</h1>
-          <p>
+          <p className="App-intro">
             Welcome to our website! We'll help you keep track of your exercises, how many 
             reps you did, how much weight you used, the units of that weight, and the date 
             you did that exercise. You can see what all you've accomplished over your 
@@ -35,7 +35,9 @@ function App() {
           <Route path="/edit-exercise">
             < EditExercisePage exerciseToEdit={exerciseToEdit} />
           </Route>
-          <footer>< Navigation /></footer>
+          <footer>
+             < Navigation />
+          </footer>
         </div>
       </Router>
     </div>
