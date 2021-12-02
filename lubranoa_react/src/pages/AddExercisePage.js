@@ -34,7 +34,7 @@ export const AddExercisePage = () => {
         <>
             <h2>Add Exercise</h2>
             <p>
-                <table id="inputs">
+                <table id="addEx">
                     < InputTableHead />
                     <tbody>
                         < AddExerciseRow name={name} setName={setName} 

@@ -9,7 +9,7 @@ export const EditExercisePage = () => {
         <>
             <h2>Edit Exercise</h2>
             <p>
-                <table id="edit">
+                <table id="editEx">
                     < InputTableHead />
                     <tbody>
                         < EditExerciseRow name={name} setName={setName} 
