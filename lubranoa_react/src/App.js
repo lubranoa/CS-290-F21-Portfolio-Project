@@ -6,10 +6,12 @@ import HomePage from "./pages/HomePage";
 import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
 import Navigation from "./components/Navigation";
-
 import { useState } from "react";
 
 function App() {
+
+  const [exerciseToEdit, setExerciseToEdit] = useState();
+
   return (
     <div className="App">
       <Router>
@@ -25,13 +27,13 @@ function App() {
             luck and have fun!
           </p>
           <Route path="/" exact>
-            < HomePage />
+            < HomePage setExerciseToEdit={setExerciseToEdit} />
           </Route>
           <Route path="/add-exercise">
             < AddExercisePage />
           </Route>
           <Route path="/edit-exercise">
-            < EditExercisePage />
+            < EditExercisePage exerciseToEdit={exerciseToEdit} />
           </Route>
           <footer>< Navigation /></footer>
         </div>
