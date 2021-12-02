@@ -1,10 +1,10 @@
-import React from 'react';
-import ExerciseTableHead from './ExerciseTableHead';
-import Exercise from './ExerciseRow';
+import React from "react";
+import ExerciseTableHead from "./ExerciseTableHead";
+import Exercise from "./ExerciseRow";
 
 function ExerciseTable({ exercises, onDeleteExercise, onEditExercise }) {
     return (
-        <table id='exercises'>
+        <table className="App-table" id="exercises">
             < ExerciseTableHead />
             <tbody>
                 {exercises.map((exercise, i) => < Exercise exercise={exercise}
