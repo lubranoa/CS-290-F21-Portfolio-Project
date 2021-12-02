@@ -7,6 +7,7 @@ import AddExercisePage from "./pages/AddExercisePage";
 import EditExercisePage from "./pages/EditExercisePage";
 import Navigation from "./components/Navigation";
 import { useState } from "react";
+import SolarizedCredit from "./components/SolarizedCredit";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           </Route>
           <footer>
              < Navigation />
+             < SolarizedCredit />
           </footer>
         </div>
       </Router>
