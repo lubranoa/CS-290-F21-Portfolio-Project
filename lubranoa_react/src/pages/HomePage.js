@@ -20,8 +20,8 @@ function HomePage() {
     return (
         <>
             <h2>List of Exercises</h2>
-            < ExerciseTable exercises={exercises} />
-            < Navigation />
+            <p>< ExerciseTable exercises={exercises} /></p>
+            <footer>< Navigation /></footer>
         </>
     )
 }
