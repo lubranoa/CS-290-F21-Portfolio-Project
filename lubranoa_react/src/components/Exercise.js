@@ -1,4 +1,5 @@
 import React from "react";
+import { RiDeleteBin2Line, RiEditLine } from 'react-icons/ri'
 
 function Exercise ({ exercise }) {
     return(
@@ -8,8 +9,8 @@ function Exercise ({ exercise }) {
             <td>{ exercise.weight }</td>
             <td>{ exercise.unit }</td>
             <td>{ exercise.date }</td>
-            <td>Edit</td>
-            <td>Delete</td>
+            <td>< RiEditLine /></td>
+            <td>< RiDeleteBin2Line/></td>
         </tr>
     );
 }
