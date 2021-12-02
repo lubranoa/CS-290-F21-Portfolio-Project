@@ -1,5 +1,5 @@
 import React from "react";
-import { RiDeleteBin2Line, RiEditLine } from 'react-icons/ri'
+import { RiDeleteBin2Line, RiEditLine } from "react-icons/ri";
 
 function Exercise ({ exercise, onDeleteExercise, onEditExercise }) {
     return(
