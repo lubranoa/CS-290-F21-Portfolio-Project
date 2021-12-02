@@ -5,36 +5,36 @@ import AddExerciseRow from "../components/AddExerciseRow";
 
 export const AddExercisePage = () => {
 
-    const [name, setName] = useState('');
-    const [reps, setReps] = useState('');
-    const [weight, setWeight] = useState('');
-    const [unit, setUnit] = useState('');
-    const [date, setDate] = useState('');
+    const [name, setName] = useState("");
+    const [reps, setReps] = useState("");
+    const [weight, setWeight] = useState("");
+    const [unit, setUnit] = useState("");
+    const [date, setDate] = useState("");
 
     const history = useHistory();
 
     const addExercise = async () => {
         const newExercise = {name, reps, weight, unit, date};
-        const response = await fetch('/exercises', {
-            method: 'POST',
+        const response = await fetch("/exercises", {
+            method: "POST",
             body: JSON.stringify(newExercise),
             headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
             },
         });
         if (response.status === 201) {
-            alert('Successfully added the exercise');
+            alert("Successfully added the exercise");
         } else {
             alert(`Failed to add the exercise, status code = ${response.status}`);
         }
-        history.push('/');
+        history.push("/");
     };
 
     return (
         <>
             <h2>Add Exercise</h2>
             <p>
-                <table id="addEx">
+                <table className="App-table" id="add-table">
                     < InputTableHead />
                     <tbody>
                         < AddExerciseRow name={name} setName={setName} 
