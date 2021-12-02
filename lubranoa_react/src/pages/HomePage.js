@@ -1,10 +1,12 @@
 import React from "react";
 import ExerciseTable from "../components/ExerciseTable";
 import { useState, useEffect } from 'react';
+import { useHistory } from "react-router-dom";
 
-function HomePage() {
+function HomePage({ setExerciseToEdit }) {
     
     const [exercises, setExercises] = useState([]);
+    const history = useHistory();
 
     const onDeleteExercise = async _id => {
         const response = await fetch(`/exercises/${_id}`, {method: 'DELETE'});
@@ -13,6 +15,11 @@ function HomePage() {
         } else {
             console.error(`Failed to delete exercise with _id = ${_id}, status code = ${response.status}`);
         }
+    };
+
+    const onEditExercise = exercise => {
+        setExerciseToEdit(exercise);
+        history.push('/edit-exercise');
     };
     
     const loadExercises = async () => {
@@ -28,7 +35,11 @@ function HomePage() {
     return (
         <>
             <h2>List of Exercises</h2>
-            <p>< ExerciseTable exercises={exercises} onDeleteExercise={onDeleteExercise} /></p>
+            <p>
+                < ExerciseTable exercises={exercises} 
+                    onDeleteExercise={onDeleteExercise} 
+                    onEditExercise={onEditExercise} />
+            </p>
         </>
     );
 }
