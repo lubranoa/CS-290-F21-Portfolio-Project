@@ -23,7 +23,7 @@ export const AddExercisePage = () => {
             },
         });
         if (response.status === 201) {
-            alert("Successfully added the exercise");
+            alert("Successfully added the exercise!");
         } else {
             alert(`Failed to add the exercise, status code = ${response.status}`);
         }
