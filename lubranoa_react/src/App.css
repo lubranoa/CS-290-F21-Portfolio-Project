@@ -52,6 +52,11 @@ caption {
 
 tr {
   border: 0px solid #002b36;
+  color: inherit;
+}
+
+tr:hover {
+  color:#cb4b16;
 }
 
 th {
@@ -113,7 +118,7 @@ input {
   background-color: #002b36;
   color: #b58900;
   border: 3px solid #073642;
-  border-radius: 1px;
+  border-radius: 2px;
   margin: 4px;
   height: 30px;
   width: 120px;
