@@ -23,7 +23,7 @@ body {
   justify-content: center;
   font-size: calc(7px + 2vmin);
   color: #b58900  ;
-  padding: 50px;
+  padding: 50px 50px 10px 50px;
 }
 
 #App-intro {
@@ -73,6 +73,7 @@ td {
 .App-link {
   color: #268bd2;
   margin: 25px;
+  font-size: 90%;
 }
 
 .App-link:visited {
@@ -81,4 +82,10 @@ td {
 
 .App-link:hover {
   color: #2aa198;
+}
+
+#style-reference {
+  color:#657b83;
+  font-size: 70%;
+  margin-top: 60px;
 }

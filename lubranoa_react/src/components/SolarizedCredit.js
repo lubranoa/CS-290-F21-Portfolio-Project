@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function SolarizedCredit() {
     return (
-        <p className='style-reference'>
+        <p id="style-reference">
             Color palette based on Solarized Dark Theme for IDEs and text editors.
         </p>
     );
