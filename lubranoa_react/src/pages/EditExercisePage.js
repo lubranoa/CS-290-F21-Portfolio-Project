@@ -35,6 +35,7 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
             <h2>Edit Exercise</h2>
             <p class="table-container">
                 <table className="App-table" id="edit-table">
+                <caption>Please fill all categories</caption>
                     < InputTableHead />
                     <tbody>
                         < EditExerciseRow name={name} setName={setName} 

@@ -5,6 +5,7 @@ import Exercise from "./ExerciseRow";
 function ExerciseTable({ exercises, onDeleteExercise, onEditExercise }) {
     return (
         <table className="App-table" id="exercises">
+            <caption>Your Exercise History</caption>
             < ExerciseTableHead />
             <tbody>
                 {exercises.map((exercise, i) => < Exercise exercise={exercise}
