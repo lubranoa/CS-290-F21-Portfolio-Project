@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(7px + 2vmin);
+  font-size: calc(6px + 2vmin);
   color: #b58900  ;
   padding: 50px 50px 10px 50px;
 }
@@ -81,24 +81,32 @@ td {
   padding-top: 4px;
 }
 
+.edit-icon:hover {
+  cursor: pointer;
+  color: #41cfc3;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  color: #db7a50;
+}
+
 .App-link {
   color: #268bd2;
   margin: 25px;
   font-size: 90%;
 }
 
+.App-link:hover {
+  color: #55aeee;
+}
+
 .App-link:visited {
   color: #859900;
 }
 
-.App-link:hover {
-  color: #d33682;
-}
-
-#style-reference {
-  color:#657b83;
-  font-size: 70%;
-  margin-top: 60px;
+.App-link:visited:hover {
+  color: #b8cf1f;
 }
 
 input {
@@ -130,4 +138,28 @@ input[type=number] {
   -moz-appearance: textfield;
   appearance: textfield;
   margin: 0; 
+}
+
+button {
+  background-color: #0d4857;
+  color: #d33682;
+  border-color: #586e75;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 32px;
+  width: 80px;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #145464;
+}
+
+#style-reference {
+  color:#657b83;
+  font-size: 70%;
+  margin-top: 60px;
 }
