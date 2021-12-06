@@ -27,7 +27,7 @@ body {
 }
 
 #App-intro {
-  color: #839496;
+  color: #93a1a1;
 }
 
 h2 {
@@ -68,6 +68,16 @@ td {
   color: inherit;
   padding: 10px;
   font-size: 80%;
+}
+
+.edit-icon {
+  color: #6c71c4;
+  padding-top: 4px;
+}
+
+.delete-icon {
+  color: #cb4b16;
+  padding-top: 4px;
 }
 
 .App-link {

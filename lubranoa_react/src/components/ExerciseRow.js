@@ -9,8 +9,14 @@ function Exercise ({ exercise, onDeleteExercise, onEditExercise }) {
             <td>{ exercise.weight }</td>
             <td>{ exercise.unit }</td>
             <td>{ exercise.date }</td>
-            <td>< RiEditLine onClick={ () => onEditExercise(exercise) } /></td>
-            <td>< RiDeleteBin2Line onClick={ () => onDeleteExercise(exercise._id) } /></td>
+            <td>
+                < RiEditLine className="edit-icon"
+                    onClick={ () => onEditExercise(exercise) } />
+            </td>
+            <td>
+                < RiDeleteBin2Line className="delete-icon"
+                    onClick={ () => onDeleteExercise(exercise._id) } />
+            </td>
         </tr>
     );
 }
