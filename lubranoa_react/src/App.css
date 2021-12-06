@@ -46,6 +46,7 @@ h2 {
 }
 
 caption {
+  color: #859900;
   font-size: 80%;
 }
 
@@ -71,7 +72,7 @@ td {
 }
 
 .edit-icon {
-  color: #6c71c4;
+  color: #2aa198;
   padding-top: 4px;
 }
 
@@ -91,7 +92,7 @@ td {
 }
 
 .App-link:hover {
-  color: #2aa198;
+  color: #d33682;
 }
 
 #style-reference {
