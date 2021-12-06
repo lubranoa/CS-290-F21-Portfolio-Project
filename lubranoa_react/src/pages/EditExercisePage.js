@@ -33,7 +33,7 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
     return (
         <>
             <h2>Edit Exercise</h2>
-            <p>
+            <p class="table-container">
                 <table className="App-table" id="edit-table">
                     < InputTableHead />
                     <tbody>

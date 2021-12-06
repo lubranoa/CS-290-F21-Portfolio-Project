@@ -33,7 +33,7 @@ export const AddExercisePage = () => {
     return (
         <>
             <h2>Add Exercise</h2>
-            <p>
+            <p class="table-container">
                 <table className="App-table" id="add-table">
                     < InputTableHead />
                     <tbody>

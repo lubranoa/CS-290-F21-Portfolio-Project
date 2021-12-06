@@ -35,7 +35,7 @@ function HomePage({ setExerciseToEdit }) {
     return (
         <>
             <h2>List of Exercises</h2>
-            <p>
+            <p class="table-container">
                 < ExerciseTable exercises={exercises} 
                     onDeleteExercise={onDeleteExercise} 
                     onEditExercise={onEditExercise} />
