@@ -100,3 +100,34 @@ td {
   font-size: 70%;
   margin-top: 60px;
 }
+
+input {
+  background-color: #002b36;
+  color: #b58900;
+  border: 3px solid #073642;
+  border-radius: 1px;
+  margin: 4px;
+  height: 30px;
+  width: 120px;
+  font-size: 75%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+  border: 3px solid #2aa198;
+  outline: none;
+}
+
+/* Hides the spinner buttons in the number inputs for Chrome */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Hides the spinner buttons in the number inputs for Firefox */
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
