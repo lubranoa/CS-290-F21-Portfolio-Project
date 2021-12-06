@@ -10,7 +10,7 @@ body {
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 25vmin;
   pointer-events: none;
 }
 
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(7px + 2vmin);
   color: #b58900  ;
   padding: 50px;
 }
@@ -43,6 +43,31 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+caption {
+  font-size: 80%;
+}
+
+tr {
+  border: 0px solid #002b36;
+}
+
+th {
+  border: 2px solid #002b36;
+  background-color: #073642;
+  color: #268bd2;
+  padding: 10px;
+  min-width: 8vmin;
+  font-size: 90%;
+}
+
+td {
+  border: 2px solid #002b36;
+  background-color: #0d4857;
+  color: inherit;
+  padding: 10px;
+  font-size: 80%;
 }
 
 .App-link {

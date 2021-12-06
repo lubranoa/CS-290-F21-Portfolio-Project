@@ -35,7 +35,7 @@ export const AddExercisePage = () => {
             <h2>Add Exercise</h2>
             <p class="table-container">
                 <table className="App-table" id="add-table">
-                <caption>Update desired categories</caption>
+                <caption>Please leave no categories blank</caption>
                     < InputTableHead />
                     <tbody>
                         < AddExerciseRow name={name} setName={setName} 
